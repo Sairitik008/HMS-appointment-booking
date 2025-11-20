@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* =================================== */
+/*  CLEAN RESET + BEST FONT SETUP     */
+/* =================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  /* Perfect base size */
+  line-height: 1.6;
+  /* Comfortable reading */
+  font-weight: 400;
+  color: #1f2937;
+  /* Deep gray-blue (not pure black) */
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mobile viewport fix */
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* =================================== */
+/*  TYPOGRAPHY SCALE – LOOKS EXPENSIVE */
+/* =================================== */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4b5563;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: #374151;
+}
+
+small,
+.text-sm {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Mobile adjustments – never too big */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+}
+
+/* =================================== */
+/*  PROFESSIONAL COLOR PALETTE         */
+/* =================================== */
+.text-primary {
+  color: #111827;
+}
+
+/* Almost black – headings */
+.text-secondary {
+  color: #4b5563;
+}
+
+/* Subheadings, labels */
+.text-muted {
+  color: #6b7280;
+}
+
+/* Helper text */
+.text-accent {
+  color: #3b82f6;
+}
+
+/* Blue – links, buttons */
+
+/* Backgrounds */
+.bg-primary {
+  background: #ffffff;
+}
+
+.bg-secondary {
+  background: #f9fafb;
+}
+
+/* Soft off-white cards */
+.bg-accent {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Borders & subtle elements */
+.border {
+  border-color: #e5e7eb;
+}
+
+.divider {
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Links – clean & modern */
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2563eb;
+}
+
+/* Buttons – premium feel */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: #111827;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1f2937;
+}
+
+.btn-secondary {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.btn-secondary:hover {
+  background: #e5e7eb;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
