@@ -1,0 +1,173 @@
+# =========================
+# ENVIRONMENT VARIABLES
+# =========================
+.env                  # Main environment file (most important!)
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*                # Any other .env files
+!.env.example         # But allow example files to be committed
+!.env.sample
+
+# =========================
+# NODE / JAVASCRIPT
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+.out/
+.outDir/
+
+# Dependency directories (if using pnpm or other)
+.pnp.*
+.pnp.js
+.pnp.cjs
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# =========================
+# TYPE SCRIPT
+# =========================
+*.tsbuildinfo
+*.tsbuildinfo.json
+next-env.d.ts
+
+# =========================
+# LOGS & CACHE
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul, nyc, jest
+coverage/
+.nyc_output/
+.coverage/
+jest-coverage/
+
+# =========================
+# OS & EDITOR FILES
+# =========================
+.DS_Store
+Thumbs.db
+.desktop
+*.swp
+*~
+.*.swp
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# =========================
+# PACKAGE MANAGERS LOCK FILES (optional)
+# Uncomment if you want to ignore lockfiles (not recommended for consistency)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =========================
+# DOCKER
+# =========================
+Dockerfile.*
+.dockerignore
+.docker/
+.docker-compose.override.yml
+
+# Docker volumes & containers data
+.docker/data/
+.docker/volumes/
+
+# =========================
+# TESTING & TEMP FILES
+# =========================
+test-results/
+playwright-report/
+playwright/.cache/
+tmp/
+temp/
+*.tmp
+
+# =========================
+# DATABASE & ORM
+# =========================
+# Prisma
+prisma/dev.db
+prisma/*.db
+prisma/*.db-journal
+
+# Local SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Supabase local
+.supabase/
+
+# =========================
+# SECURITY & SECRETS
+# =========================
+# SSH keys, certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.cert
+*.pfx
+
+# AWS / Cloud credentials (never commit!)
+.aws/
+config/aws/
+
+# =========================
+# MISC
+# =========================
+.env.backup
+.env.save
+.env~
+*.bak
+*.orig
+*.rej
+
+# Local Netlify or Vercel functions
+.netlify/
+.vercel/
+
+# Turbo (if using Turborepo)
+.turbo/
+
+# Bun (if using Bun instead of Node)
+.bun/
+
+# =========================
+# KEEP THESE (do NOT ignore)
+# =========================
+!.env.example
+!.env.sample
+!.env.template
+!README.md
+!docker-compose.yml
+!Dockerfile
+
+# End of file
